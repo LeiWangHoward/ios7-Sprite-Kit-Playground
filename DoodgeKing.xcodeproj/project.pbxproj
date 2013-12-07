@@ -24,6 +24,9 @@
 		3B3A7BFA1853AEE6009361D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3A7BD51853AEE6009361D4 /* UIKit.framework */; };
 		3B3A7C021853AEE6009361D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A7C001853AEE6009361D4 /* InfoPlist.strings */; };
 		3B3A7C041853AEE6009361D4 /* DoodgeKingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A7C031853AEE6009361D4 /* DoodgeKingTests.m */; };
+		3B3A7C111853B116009361D4 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A7C0E1853B116009361D4 /* background-music-aac.caf */; };
+		3B3A7C121853B116009361D4 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A7C0F1853B116009361D4 /* pew-pew-lei.caf */; };
+		3B3A7C131853B116009361D4 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A7C101853B116009361D4 /* sprites.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		3B3A7BFF1853AEE6009361D4 /* DoodgeKingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoodgeKingTests-Info.plist"; sourceTree = "<group>"; };
 		3B3A7C011853AEE6009361D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B3A7C031853AEE6009361D4 /* DoodgeKingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoodgeKingTests.m; sourceTree = "<group>"; };
+		3B3A7C0E1853B116009361D4 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		3B3A7C0F1853B116009361D4 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		3B3A7C101853B116009361D4 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,8 @@
 		3B3A7BD91853AEE6009361D4 /* DoodgeKing */ = {
 			isa = PBXGroup;
 			children = (
+				3B3A7C0D1853B116009361D4 /* Sounds */,
+				3B3A7C101853B116009361D4 /* sprites.atlas */,
 				3B3A7BE21853AEE6009361D4 /* AppDelegate.h */,
 				3B3A7BE31853AEE6009361D4 /* AppDelegate.m */,
 				3B3A7BE51853AEE6009361D4 /* Main.storyboard */,
@@ -162,6 +170,15 @@
 				3B3A7C001853AEE6009361D4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B3A7C0D1853B116009361D4 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3B3A7C0E1853B116009361D4 /* background-music-aac.caf */,
+				3B3A7C0F1853B116009361D4 /* pew-pew-lei.caf */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,10 +257,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3A7C131853B116009361D4 /* sprites.atlas in Resources */,
+				3B3A7C111853B116009361D4 /* background-music-aac.caf in Resources */,
 				3B3A7BDE1853AEE6009361D4 /* InfoPlist.strings in Resources */,
 				3B3A7BF11853AEE6009361D4 /* Images.xcassets in Resources */,
 				3B3A7BEF1853AEE6009361D4 /* Spaceship.png in Resources */,
 				3B3A7BE71853AEE6009361D4 /* Main.storyboard in Resources */,
+				3B3A7C121853B116009361D4 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoodgeKing/DoodgeKing-Prefix.pch";
 				INFOPLIST_FILE = "DoodgeKing/DoodgeKing-Info.plist";
@@ -406,6 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DoodgeKing/DoodgeKing-Prefix.pch";
 				INFOPLIST_FILE = "DoodgeKing/DoodgeKing-Info.plist";
